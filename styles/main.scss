@@ -1,0 +1,103 @@
+@font-face{
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 400;
+    src:url(../fonts/SFProText-Regular.ttf)
+}
+
+@font-face {
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/SFProText-Medium.ttf);
+}
+
+@font-face {
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 600;
+    src:url(../fonts/SFProText-Semibold.ttf);
+
+}
+@font-face {
+    font-family: SFProText;
+    font-style: normal;
+    font-weight: 700;
+    src:url(../fonts/SFProText-Bold.ttf);
+
+}
+
+@font-face {
+    font-family: SFProDisplay;
+    font-style: normal;
+    font-weight: 400;
+    src:url(../fonts/SFProDisplay-Regular.ttf);
+}
+
+
+body {
+  font-family: 'SFProText', Times, serif;
+}
+
+@import './header';
+@import './aside';
+@import './card';
+@import './right-panel';
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+    background: #F5F6F8;
+    min-height: 2000px;
+    display: flex;
+    position: relative;
+}
+
+.main {
+    width: 1024px;
+    margin-top: 64px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: space-between;
+    
+
+    .cards-separator {
+        height: 24px;
+        &__item {
+            visibility: hidden;
+            display: flex;
+            align-items: center; 
+            .dashed-line {
+                display: inline-block;
+                width: 48%;
+                border-bottom: 1px dashed #7082AF;
+            }
+            .add-btn {
+                display: inline-block;
+                text-align: center;
+                width: 24px;
+                height: 24px;
+                border: 1px solid #E5E5E5;
+                border-radius: 25px;
+                font-size: 15px;
+                line-height: 21px;
+                letter-spacing: -0.15px;
+                color: #7082AF;
+                background-color: white;
+            }
+        }  
+        
+        &:hover .cards-separator__item {
+            visibility: visible;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+
+
+

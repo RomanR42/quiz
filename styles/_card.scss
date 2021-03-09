@@ -1,0 +1,201 @@
+
+.cards {
+
+   .card {
+    width: 672px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 8px 15px rgba(0, 23, 83, 0.1);
+    margin-bottom: 8px;
+    margin-top: 8px;
+    position: relative;
+    &__top {
+        margin-left: 32px;
+        padding-top: 33px;
+        h2 {
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: -0.15px;
+            color: #101A4B; 
+            margin-bottom: 41px;
+        }
+        .variant::before {
+            content: "Варианты ответов:";
+        }
+        .emo::before {
+            content: "Эмоджи:";
+        }
+       &_number {
+           font-weight: 600;
+       }
+       p {
+         font-family: SFProDisplay;
+         font-size: 13px;
+         line-height: 16px;
+         letter-spacing: -0.15px;
+         color: #1C538A; 
+         margin-bottom: 16px;
+       }
+       button {
+           border: none;
+           border-radius: 6px;
+           margin-right: 10px;
+           outline: none;
+           font-family: SFProDisplay;
+           font-size: 13px;
+           line-height: 16px;
+           letter-spacing: -0.15px;
+           color: #1C538A;
+           background: #F5F6F8;
+           border: 1px solid #E9F0FE;
+           box-sizing: border-box;
+           height: 40px;
+           padding: 12px 15.325px 12px 15.325px;
+       }
+
+   
+        .panel-btn {
+
+            display: flex;
+
+            .btn-emo {
+                height: 48px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+
+        }
+
+    }
+
+    hr {
+        margin-top: 31px;
+        margin-bottom: 18px;
+        border: none;
+        height: 1px;
+        background-color: #E9F0FE;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 18px;
+
+        &_edit {
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: -0.15px;
+            color: #0351DF;
+            text-decoration: none;
+            margin-left:32px;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        &_info {
+            margin-right: 32px;
+            display: flex;
+            align-items: center;
+
+            span {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-color: #FFB81F;
+                border-radius: 50px;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 14px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding-left: 7px;
+                padding-top: 3px;
+                margin-left: 8px;
+            }
+        }
+    }
+
+    &__frame-first_wrapper {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        left:0;
+        right: 0;
+        top:-56px;
+        
+        &_panel{
+            padding: 8px;
+            width: 436px;
+            height: 48px;
+            background: #2F287F;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .first-panel-btn {
+                padding: 8px 10px;
+                height: 32px;
+                color: white;
+                border-radius: 6px;
+                text-align: center;
+                font-size: 13px;
+                line-height: 16px;
+                letter-spacing: -0.15px;
+                cursor: pointer;
+                &:hover {
+                    background: #514AA7;
+                }
+            }
+            .first-panel-btn-icon {
+                cursor: pointer;
+            }
+        }
+
+        &_tip{
+            text-align: center;
+            line-height: 6px;
+        }
+    }
+
+
+    .second-wrapper {
+        
+        &_panel {
+            width: 289px;
+            .second-btn {
+                display: flex;
+                align-items: center;
+                img {
+                    margin-right: 6px;
+                }
+            }
+            .second-btn-move {
+                background: #00AE09;
+            }
+        }
+      
+    }
+
+  }
+
+
+  & :first-child {
+      margin-top: 0;
+  }
+
+  & :last-child {
+    margin-bottom: 0;
+}
+
+}
